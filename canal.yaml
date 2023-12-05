@@ -84,6 +84,14 @@ data:
           },
           "kubernetes": {
               "kubeconfig": "__KUBECONFIG_FILEPATH__"
+          },
+          "container_settings": {
+            "allow_ip_forwarding": true
+          },
+          "delegate":{
+            "hairpinMode":true,
+            "forceAddress":true,
+            "isDefaultGateway":true
           }
         },
         {
