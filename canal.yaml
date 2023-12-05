@@ -75,6 +75,9 @@ data:
           "datastore_type": "kubernetes",
           "nodename": "__KUBERNETES_NODE_NAME__",
           "mtu": __CNI_MTU__,
+          "hairpinMode": true,
+          "forceAddress": true,
+          "isDefaultGateway": true,
           "ipam": {
               "type": "host-local",
               "subnet": "usePodCidr"
@@ -87,11 +90,6 @@ data:
           },
           "container_settings": {
             "allow_ip_forwarding": true
-          },
-          "delegate":{
-            "hairpinMode":true,
-            "forceAddress":true,
-            "isDefaultGateway":true
           }
         },
         {
