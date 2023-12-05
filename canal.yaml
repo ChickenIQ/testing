@@ -87,6 +87,11 @@ data:
           },
           "container_settings": {
             "allow_ip_forwarding": true
+          },
+          "delegate":{
+            "hairpinMode":true,
+            "forceAddress":true,
+            "isDefaultGateway":true
           }
         },
         {
