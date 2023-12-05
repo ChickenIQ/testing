@@ -84,14 +84,6 @@ data:
           },
           "kubernetes": {
               "kubeconfig": "__KUBECONFIG_FILEPATH__"
-          },
-          "container_settings": {
-            "allow_ip_forwarding": true
-          },
-          "delegate":{
-            "hairpinMode":true,
-            "forceAddress":true,
-            "isDefaultGateway":true
           }
         },
         {
@@ -111,9 +103,7 @@ data:
     {
       "Network": "10.244.0.0/16",
       "Backend": {
-        "Type": "wireguard",
-        "PersistentKeepaliveInterval": 25,
-        "Mode": "separate"
+        "Type": "vxlan"
       }
     }
 ---
