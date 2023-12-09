@@ -5336,7 +5336,8 @@ spec:
               '/opt/bin/flanneld',
               '--ip-masq',
               '--kube-subnet-mgr',
-              '--public-ip EXTERNAL_IP',
+              '--public-ip=EXTERNAL_IP',
+              '--iface=INTERFACE_NAME',
               # '--iptables-forward-rules True',
             ]
           securityContext:
